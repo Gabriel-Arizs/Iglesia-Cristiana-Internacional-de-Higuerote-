@@ -1,56 +1,46 @@
-import  "../index.css"
+import type { HeroSectionProps } from "../types/Hero.types";
 
-export function Hero() {
-   
-   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image & Overlay */}
-      <div className="absolute inset-0">
-        <img
-          className="w-full h-full object-cover"
-          alt="Modern architectural sanctuary with dramatic lighting"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDznK7cVX01e_NojeMyOaHtz0726n9LxfbaFQcIRWm8Lt2vaagwXCPZmIfjbL42O0tLCGxjxBxioD78wMOxrYSnuKxcatlRKj1RtCbopRysWO5XPpBR1yThRtmIKqom_hGC1j6UTN_5HoTc4NPs0yma_hIDwMFFUZEefVJR9u7UViLZsHH6nKYbxf0FUXN3W1y4NLRELjqzGPKSIurGkCzKmd4mPPHnTSO3GAlidijmJEFZkgsaZileznsy38mpWCzaNJCp56rbwP4"
-        />
-        {/* Asegúrate de tener definida la clase 'hero-gradient' en tu CSS global o Tailwind config */}
-        <div className="absolute inset-0 hero-gradient"></div>
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl">
-        <span className="text-white/80 uppercase tracking-[0.3em] font-label text-sm mb-6 block">
-          Bienvenidos a Casa
-        </span>
+export const HeroSection: React.FC<HeroSectionProps> = ({
+  title = "Un nuevo comienzo en Jesús, Salvación y esperanza para tu familia.",
+  subtitle = "Nos reunimos para adorar, ser transformados y compartir el mensaje de esperanza con nuestra ciudad y el mundo.",
+  backgroundImage = "https://images.unsplash.com/photo-1510590337019-5ef8d3d32116?auto=format&fit=crop&q=80", 
+  buttonText = "Nosotros",
+  onButtonClick,
+}) => {
+  return (
+    <section className="relative pt-24 pb-16 px-4 md:px-8 bg-background">
+      <div className="max-w-7xl mx-auto relative h-[600px] md:h-[700px] rounded-[2.5rem] overflow-hidden shadow-2xl">
         
-        <h1 className="text-5xl md:text-8xl font-extrabold text-white leading-tight tracking-tighter mb-8 font-headline">
-          El Santuario de la <br />
-          Esperanza
-        </h1>
+        <div className="absolute inset-0">
+          <img
+            className="w-full h-full object-cover"
+            alt="Hero background"
+            src={backgroundImage}
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
 
-        <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-          Un espacio diseñado para el encuentro, la paz y la transformación
-          espiritual en el corazón de la ciudad.
-        </p>
-
-        {/* Action Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <button 
-            className="bg-white text-primary px-8 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform"
-            onClick={() => console.log('Planea tu visita clicked')}
-          >
-            Planea tu Visita
-          </button>
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6 font-headline">
+            {title}
+          </h1>
           
-          <button 
-            className="border border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-colors"
-            onClick={() => console.log('Ver en vivo clicked')}
-          >
-            Ver en Vivo
-          </button>
+          <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+            {subtitle}
+          </p>
+
+          <div className="flex flex-col items-center gap-8">
+            <button
+              onClick={onButtonClick}
+              className="bg-[#cee5ff] text-[#001d33] px-12 py-4 rounded-full font-bold text-lg hover:bg-white transition-all shadow-lg uppercase tracking-wider"
+            >
+              {buttonText}
+            </button>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-
-export default Hero
+export default HeroSection;

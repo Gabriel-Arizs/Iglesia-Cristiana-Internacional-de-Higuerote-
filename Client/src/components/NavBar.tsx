@@ -9,7 +9,7 @@ const NAV_LINKS: NavItem[] = [
 
 export  function NavBar() {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+    <nav className="fixed top-0 w-full z-50 py-0.5 bg-white dark:bg-slate-950">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
         
         <div className="text-xl font-bold text-blue-900 dark:text-blue-100 uppercase tracking-tighter font-headline">

@@ -12,8 +12,8 @@ export  function NavBar() {
     <nav className="fixed top-0 w-full z-50 py-0.5 bg-white dark:bg-slate-950">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
         
-        <div className="text-xl font-bold text-blue-900 dark:text-blue-100 uppercase tracking-tighter font-headline">
-          Misión Carismática
+        <div className="text-sm font-bold text-slate-700 dark:text-blue-100 uppercase tracking-tighter font-headline">
+          Iglesia Cristiana <br /> Internacional de Higuerote
         </div>
 
         <div className="hidden md:flex space-x-8 items-center">

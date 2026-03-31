@@ -11,14 +11,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     <section className="relative pt-24 pb-16 px-4 md:px-8 bg-background">
       <div className="max-w-7xl mx-auto relative h-[600px] md:h-[700px] rounded-[2.5rem] overflow-hidden shadow-2xl">
         
-        <div className="absolute inset-0">
-          <img
-            className="w-full h-full object-cover"
-            alt="Hero background"
-            src={backgroundImage}
-          />
-          <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+        <div 
+      className="absolute inset-0 bg-cover bg-center bg-fixed transition-transform duration-500"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <div className="absolute inset-0 bg-black/50 backdrop-brightness-75"></div>
+    </div>
 
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6 font-headline">

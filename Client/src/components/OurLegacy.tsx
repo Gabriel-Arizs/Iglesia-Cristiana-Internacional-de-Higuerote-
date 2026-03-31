@@ -27,21 +27,22 @@ export default function OurLegacy() {
             <div className="relative w-full max-w-xl aspect-[4/5]">
               <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-xl overflow-hidden shadow-2xl z-0 rotate-3">
                 <img
-                  className="w-full h-full object-cover grayscale opacity-50"
+                  className="w-full h-full object-cover grayscale "
                   alt="Historical photo of church founders"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkTC8h_6pD_FkLCNSkYb5fJHvLQvkuweV2U7gmT3hl1_nGW4UJKSPXV_gEey6d7-YvJsWgb-KJPQoupePjuNhKAm4uOGdKb7Qok54qScTwhfY1mLDEu2HjoAXZh_0qmg-_sWa06oTJ090ZwJQ3LQG8ioWMjDGB6sPZUg1y3W1JZZ0niW36Hml1ga3Ma2sh2DcUrroK4qBXWcqLzgdLowCeDchOFBjibFG0jCjn7yHf4UWgx5uUURW_zD3HJWhVQCfHonT2Z6lUuJk"
+                  src="../../public/Ministro.jpeg"
                 />
+                <div className="absolute inset-0 bg-black/10"></div>
               </div>
               <div className="absolute bottom-0 left-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-2xl z-20 -rotate-2 border-8 border-white">
                 <img
                   className="w-full h-full object-cover"
                   alt="Worship scene with crowds"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYinkobcjRDaGtfbc58mvRY1SCLA9OShM-pM4SdHr_XDFyjCy3kWv-u5fKp3uD_jKcamoUDW1h934l56rbpdhfi36s9RSEhRAaVYIUvya-5MxNeIh28BFAMIlfFN1Clc4HJ3YW1PopareQs_Jj44cP34Ys2A9cj7jJ6emfhF51ooElBO29UmIErttQYYBhRpP7lXAbqELxk03o5EoqNtvD-tV80LVh3Kb92kCZ20UB6RrA0IgwmnrCO6uy6CIkzcQdbtJ-oMcBwKA"
+                  src="../../public/Pastora.jpeg"
                 />
               </div>
               <div className="absolute top-1/4 -left-12 w-48 h-48 bg-primary-container rounded-full flex items-center justify-center text-white z-30 shadow-xl">
                 <div className="text-center">
-                  <span className="text-4xl font-bold block">40+</span>
+                  <span className="text-4xl font-bold block">20+</span>
                   <span className="text-xs uppercase tracking-widest">Años de Fe</span>
                 </div>
               </div>

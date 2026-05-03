@@ -1,10 +1,11 @@
 import type { NavItem } from "../types/navBar";
 
 const NAV_LINKS: NavItem[] = [
-  { label: "Inicio", href: "#", isActive: true },
+  { label: "Inicio", href: "/", isActive: true },
   { label: "Ministerios", href: "#" },
+  { label: "Liderazgo", href: "/leadership" },
   { label: "Nuestra Sede", href: "#" },
-  { label: "Legado", href: "#" },
+  { label: "Legado", href: "/our-legacy" },
 ];
 
 export  function NavBar() {

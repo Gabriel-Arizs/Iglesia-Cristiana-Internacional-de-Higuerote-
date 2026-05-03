@@ -14,4 +14,4 @@ export function Leadership() {
   );
 };
 
-export default Leadership;
+export { Leadership as Component } ;

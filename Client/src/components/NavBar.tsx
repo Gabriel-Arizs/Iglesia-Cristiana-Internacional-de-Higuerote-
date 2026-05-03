@@ -1,14 +1,15 @@
+import { NavLink } from "react-router"; // Importante: usar NavLink
 import type { NavItem } from "../types/navBar";
 
 const NAV_LINKS: NavItem[] = [
-  { label: "Inicio", href: "/", isActive: true },
-  { label: "Ministerios", href: "#" },
+  { label: "Inicio", href: "/" },
+  { label: "Ministerios", href: "/ministerios" }, // Cambié # por rutas sugeridas
   { label: "Liderazgo", href: "/leadership" },
-  { label: "Nuestra Sede", href: "#" },
+  { label: "Nuestra Sede", href: "/sede" },
   { label: "Legado", href: "/our-legacy" },
 ];
 
-export  function NavBar() {
+export function NavBar() {
   return (
     <nav className="fixed top-0 w-full z-50 py-0.5 bg-white dark:bg-slate-950">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
@@ -19,17 +20,19 @@ export  function NavBar() {
 
         <div className="hidden md:flex space-x-8 items-center">
           {NAV_LINKS.map((link) => (
-            <a
+            <NavLink
               key={link.label}
-              href={link.href}
-              className={`font-inter tracking-tight transition-colors ${
-                link.isActive
-                  ? "text-blue-900 dark:text-blue-400 font-bold border-b-2 border-blue-900 dark:border-blue-400 pb-1"
-                  : "text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200"
-              }`}
+              to={link.href} // NavLink usa 'to' en lugar de 'href'
+              className={({ isActive }) => 
+                `font-inter tracking-tight transition-colors pb-1 ${
+                  isActive
+                    ? "text-blue-900 dark:text-blue-400 font-bold border-b-2 border-blue-900 dark:border-blue-400"
+                    : "text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200"
+                }`
+              }
             >
               {link.label}
-            </a>
+            </NavLink>
           ))}
 
           {/* Call to Action Button */}
@@ -47,4 +50,4 @@ export  function NavBar() {
   );
 }
 
-export default NavBar
+export default NavBar;

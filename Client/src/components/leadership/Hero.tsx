@@ -4,23 +4,23 @@ import type { HeroProps} from './Hero.types';
 
 const GALLERY_IMAGES: GalleryImage[] = [
   {
-    src: "../../../public/photo1.jpeg",
+    src: "./photo1.jpeg",
     alt: "Líder de adoración cantando",
     aspect: "aspect-[3/4]",
     wrapperClass: "pt-8"
   },
   {
-    src: "../../../public/photo2.jpeg",
+    src: "./photo2.jpeg",
     alt: "Maestra cariñosa con niños",
     aspect: "aspect-square"
   },
   {
-    src: "../../../public/photo3.jpeg",
+    src: "./photo3.jpeg",
     alt: "Líderes comunitarios conversando",
     aspect: "aspect-square"
   },
   {
-    src: "../../../public/photo4.jpeg",
+    src: "./photo4.jpeg",
     alt: "Líder juvenil con adolescentes",
     aspect: "aspect-[3/4]"
   }

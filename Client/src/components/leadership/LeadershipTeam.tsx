@@ -11,7 +11,7 @@ function YouthNetworkCard({ className = "" }: YouthNetworkCardProps) {
      <img
         alt="Women Network"
         className="absolute object-top inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-        src="/young.jpg"
+        src="./young.jpg"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
       <div className="absolute bottom-0 left-0 p-8 text-white z-10">
@@ -34,7 +34,7 @@ function MarriageNetworkCard() {
       <img
         alt="Marriage Network"
         className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700"
-        src="/marriage.jpg" // Cambiar por imagen real
+        src="./marriage.jpg" // Cambiar por imagen real
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
       <div className="relative z-10 p-8 flex flex-col h-full justify-end text-white">
@@ -61,7 +61,7 @@ function MenNetworkCard() {
       <img
         alt="Men Network"
         className="absolute inset-0 w-full h-full object-cover brightness-95 group-hover:scale-105 transition-transform duration-700"
-        src="../../../public/men.jpeg" // Cambiar por imagen real
+        src="./men.jpeg" // Cambiar por imagen real
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
       
@@ -97,7 +97,7 @@ function WomenNetworkCard() {
       <img
         alt="Women Network"
         className="absolute object-top inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
-        src="../../../public/women.jpg"
+        src="./women.jpg"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
       

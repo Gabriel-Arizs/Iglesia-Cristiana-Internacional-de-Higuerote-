@@ -29,7 +29,7 @@ export default function OurLegacy() {
                 <img
                   className="w-full h-full object-cover grayscale "
                   alt="Historical photo of church founders"
-                  src="../../public/Ministro.jpeg"
+                  src="./Ministro.jpeg"
                 />
                 <div className="absolute inset-0 bg-black/10"></div>
               </div>
@@ -37,7 +37,7 @@ export default function OurLegacy() {
                 <img
                   className="w-full h-full object-cover"
                   alt="Worship scene with crowds"
-                  src="../../public/Pastora.jpeg"
+                  src="./Pastora.jpeg"
                 />
               </div>
               <div className="absolute top-1/4 -left-12 w-48 h-48 bg-primary-container rounded-full flex items-center justify-center text-white z-30 shadow-xl">

@@ -13,7 +13,6 @@ export function NavBar() {
   return (
     <nav className="fixed top-0 w-full z-50 py-0.5 bg-white dark:bg-slate-950">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-        
         <div className="text-sm font-bold text-slate-700 dark:text-blue-100 uppercase tracking-tighter font-headline">
           Iglesia Cristiana <br /> Internacional de Higuerote
         </div>
@@ -23,7 +22,7 @@ export function NavBar() {
             <NavLink
               key={link.label}
               to={link.href} // NavLink usa 'to' en lugar de 'href'
-              className={({ isActive }) => 
+              className={({ isActive }) =>
                 `font-inter tracking-tight transition-colors pb-1 ${
                   isActive
                     ? "text-blue-900 dark:text-blue-400 font-bold border-b-2 border-blue-900 dark:border-blue-400"
@@ -42,7 +41,10 @@ export function NavBar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button className="md:hidden text-primary p-2 focus:outline-none" aria-label="Abrir menú">
+        <button
+          className="md:hidden text-primary p-2 focus:outline-none"
+          aria-label="Abrir menú"
+        >
           <span className="material-symbols-outlined">menu</span>
         </button>
       </div>

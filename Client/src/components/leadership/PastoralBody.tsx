@@ -1,5 +1,5 @@
 import { defaultPastores } from "../../mocks/PastoralBody";
-import type {  PastoralBodyProps } from "./PastoralBody.types";
+import type { PastoralBodyProps } from "./PastoralBody.types";
 
 export default function PastoralBody({
   sectionTitle = "Cuerpo Pastoral",
@@ -8,7 +8,6 @@ export default function PastoralBody({
   return (
     <section className="bg-background py-24">
       <div className="max-w-7xl mx-auto px-8">
-
         {/* Título de sección */}
         <h2 className="text-5xl font-bold text-primary tracking-tight text-center mb-20">
           {sectionTitle}
@@ -69,7 +68,6 @@ export default function PastoralBody({
             );
           })}
         </div>
-
       </div>
     </section>
   );

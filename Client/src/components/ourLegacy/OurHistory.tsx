@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import React from "react";
 
 interface NuestraHistoriaProps {
@@ -52,7 +53,7 @@ const NuestraHistoria: React.FC<NuestraHistoriaProps> = ({
               className="inline-flex items-center space-x-2 text-primary font-bold hover:translate-x-2 transition-transform"
             >
               <span>{linkText}</span>
-              <span className="material-symbols-outlined">trending_flat</span>
+              <ArrowRight />
             </a>
           </div>
         </div>

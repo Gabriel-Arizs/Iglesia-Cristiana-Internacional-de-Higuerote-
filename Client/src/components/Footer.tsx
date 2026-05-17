@@ -1,4 +1,4 @@
-import type {  FooterLinks } from "../types/Footer";
+import type { FooterLinks } from "../types/Footer";
 import { FooterLinkList } from "./FooterLinkList";
 
 const FOOTER_LINKS: FooterLinks = {
@@ -28,7 +28,6 @@ export default function Footer() {
   return (
     <footer className="bg-slate-50 dark:bg-slate-900 w-full py-12 px-8">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto border-t border-slate-200/50 dark:border-slate-800/50 pt-12">
-        
         {/* Columna de Marca */}
         <div className="col-span-1">
           <div className="text-lg font-bold text-blue-900 dark:text-blue-100 mb-4 font-headline">
@@ -53,7 +52,8 @@ export default function Footer() {
       {/* Copyright */}
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200/30 text-center">
         <p className="text-sm font-inter text-slate-500 dark:text-slate-400">
-          © {currentYear} Misión Carismática Internacional. El Santuario Arquitectónico.
+          © {currentYear} Misión Carismática Internacional. El Santuario
+          Arquitectónico.
         </p>
       </div>
     </footer>
@@ -63,7 +63,10 @@ export default function Footer() {
 // Mini-componente auxiliar para evitar repetición
 function SocialIcon({ icon }: { icon: string }) {
   return (
-    <a className="text-slate-400 hover:text-blue-600 transition-colors" href="#">
+    <a
+      className="text-slate-400 hover:text-blue-600 transition-colors"
+      href="#"
+    >
       <span className="material-symbols-outlined">{icon}</span>
     </a>
   );

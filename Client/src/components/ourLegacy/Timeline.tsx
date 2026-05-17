@@ -1,8 +1,9 @@
-import React from "react";
+import { Globe, Star, Church } from "lucide-react";
+import type { JSX } from "react";
 
 export interface TimelineItem {
   year: string;
-  icon: string;
+  icon: JSX.Element;
   title: string;
   description: string;
 }
@@ -16,21 +17,21 @@ interface TimelineProps {
 const defaultItems: TimelineItem[] = [
   {
     year: "1984",
-    icon: "star",
+    icon: <Star />,
     title: "La Semilla de Fe",
     description:
       "Fundación de la primera congregación bajo una visión de restauración familiar profunda.",
   },
   {
     year: "2005",
-    icon: "church",
+    icon: <Church />,
     title: "Expansión Arquitectónica",
     description:
       "Consagración de nuestro actual santuario, un espacio diseñado para la excelencia y el encuentro.",
   },
   {
     year: "2020",
-    icon: "public",
+    icon: <Globe />,
     title: "Trascendencia Digital",
     description:
       "Lanzamiento del ministerio global, rompiendo fronteras físicas para llevar luz a cada nación.",

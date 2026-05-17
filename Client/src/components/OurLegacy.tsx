@@ -1,4 +1,4 @@
-export default function OurLegacy() { 
+export default function OurLegacy() {
   return (
     <section className="py-32 px-8 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto relative">
@@ -16,7 +16,10 @@ export default function OurLegacy() {
               Nuestra historia está escrita con fe, perseverancia y una visión
               inquebrantable.
             </p>
-            <a className="text-primary font-bold inline-flex items-center group" href="#">
+            <a
+              className="text-primary font-bold inline-flex items-center group"
+              href="#"
+            >
               Conoce nuestra historia
               <span className="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">
                 arrow_forward
@@ -43,7 +46,9 @@ export default function OurLegacy() {
               <div className="absolute top-1/4 -left-12 w-48 h-48 bg-primary-container rounded-full flex items-center justify-center text-white z-30 shadow-xl">
                 <div className="text-center">
                   <span className="text-4xl font-bold block">20+</span>
-                  <span className="text-xs uppercase tracking-widest">Años de Fe</span>
+                  <span className="text-xs uppercase tracking-widest">
+                    Años de Fe
+                  </span>
                 </div>
               </div>
             </div>

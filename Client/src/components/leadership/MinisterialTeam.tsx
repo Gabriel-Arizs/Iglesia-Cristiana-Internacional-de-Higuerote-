@@ -87,7 +87,7 @@ function TimelineItem({ member, isVisible, isLast }: TimelineItemProps) {
 
 export default function MinisterialTeam() {
   const [visibleItems, setVisibleItems] = useState<boolean[]>(
-    new Array(teamMembers.length).fill(false)
+    new Array(teamMembers.length).fill(false),
   );
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -106,7 +106,7 @@ export default function MinisterialTeam() {
             observer.disconnect();
           }
         },
-        { threshold: 0.2 }
+        { threshold: 0.2 },
       );
 
       observer.observe(ref);

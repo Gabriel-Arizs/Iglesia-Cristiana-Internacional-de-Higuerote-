@@ -51,8 +51,12 @@ const ThenAndNow: React.FC<ThenAndNowProps> = ({
                   <h4 className="text-xs font-black uppercase tracking-[0.2em] text-primary mb-2">
                     {era.periodLabel}
                   </h4>
-                  <h3 className="text-2xl font-bold text-primary mb-4">{era.title}</h3>
-                  <p className="text-on-surface-variant leading-relaxed">{era.description}</p>
+                  <h3 className="text-2xl font-bold text-primary mb-4">
+                    {era.title}
+                  </h3>
+                  <p className="text-on-surface-variant leading-relaxed">
+                    {era.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -88,7 +92,9 @@ const ThenAndNow: React.FC<ThenAndNowProps> = ({
                     Misión en Vivo
                   </span>
                 </div>
-                <p className="text-sm font-bold text-primary">{floatingQuote}</p>
+                <p className="text-sm font-bold text-primary">
+                  {floatingQuote}
+                </p>
               </div>
             </div>
           </div>

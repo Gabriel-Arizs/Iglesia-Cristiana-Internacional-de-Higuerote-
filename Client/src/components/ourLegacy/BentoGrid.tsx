@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import React from "react";
 
 interface BentoRootsCard {
@@ -44,14 +45,16 @@ const BentoGrid: React.FC<BentoGridProps> = ({
   roots = {
     year: "1954",
     title: "Raíces Profundas",
-    description: "Todo comenzó con una oración en una pequeña sala. Hoy, esa misma fe sostiene a miles.",
+    description:
+      "Todo comenzó con una oración en una pequeña sala. Hoy, esa misma fe sostiene a miles.",
     buttonText: "Ver el documental",
     imageUrl:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCSAzQvpzT5Xy3Ntir5A0W2ixgPU1kQ9mAeEPZq_u4HjUSE9_5Fc8TztKzQ1h_upJcvWHUaxOSIdAggloxjIPelbni5eNIDhhJ7zf4dGZ3lhu6F8-D3WUUpGsF3IoQ7yg8vT3qFTVxXT7ThirdFns3iDqWvU-Tml2B0_XbNEnPfI4LeRVk5_gR_v7t1i4FyI23jBCgVHoM6Xqkojg1QV0h1E2RHo0zEoAKat4xgZqA2sQ2FZFioBNNbxRRgTApXV267n8L6stT0ShI",
   },
   youth = {
     title: "ADN Joven",
-    description: "Inyectando innovación y energía fresca a la misión institucional.",
+    description:
+      "Inyectando innovación y energía fresca a la misión institucional.",
     linkText: "Conoce ICIH Youth",
     linkHref: "#",
     imageUrl:
@@ -94,16 +97,18 @@ const BentoGrid: React.FC<BentoGridProps> = ({
               <span className="text-secondary-container font-black text-6xl opacity-30 mb-4 block">
                 {roots.year}
               </span>
-              <h3 className="text-3xl font-bold text-white mb-4">{roots.title}</h3>
-              <p className="text-blue-100/70 mb-6 text-lg">{roots.description}</p>
+              <h3 className="text-3xl font-bold text-white mb-4">
+                {roots.title}
+              </h3>
+              <p className="text-blue-100/70 mb-6 text-lg">
+                {roots.description}
+              </p>
               <button
                 onClick={roots.onButtonClick}
                 className="flex items-center gap-2 text-white font-bold group"
               >
                 {roots.buttonText}
-                <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">
-                  arrow_right_alt
-                </span>
+                <ArrowRight className="transition-transform group-hover:translate-x-2" />
               </button>
             </div>
           </div>
@@ -112,8 +117,12 @@ const BentoGrid: React.FC<BentoGridProps> = ({
           <div className="md:col-span-2 relative group overflow-hidden rounded-xl bg-surface-container-highest">
             <div className="flex h-full flex-col md:flex-row">
               <div className="p-8 md:w-1/2 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-primary mb-3">{youth.title}</h3>
-                <p className="text-on-surface-variant mb-4">{youth.description}</p>
+                <h3 className="text-2xl font-bold text-primary mb-3">
+                  {youth.title}
+                </h3>
+                <p className="text-on-surface-variant mb-4">
+                  {youth.description}
+                </p>
                 <a
                   href={youth.linkHref}
                   className="text-primary font-black underline decoration-secondary-container underline-offset-4"
@@ -140,7 +149,9 @@ const BentoGrid: React.FC<BentoGridProps> = ({
               {stat.icon}
             </span>
             <div>
-              <div className="text-4xl font-black text-primary mb-1">{stat.value}</div>
+              <div className="text-4xl font-black text-primary mb-1">
+                {stat.value}
+              </div>
               <div className="text-sm font-bold text-on-surface-variant uppercase tracking-widest">
                 {stat.label}
               </div>
@@ -156,9 +167,7 @@ const BentoGrid: React.FC<BentoGridProps> = ({
               <h3 className="text-xl font-bold mb-2">{donate.title}</h3>
               <p className="text-sm opacity-80">{donate.description}</p>
             </div>
-            <span className="material-symbols-outlined text-4xl text-on-secondary-container group-hover:text-white group-hover:translate-x-2 transition-all">
-              volunteer_activism
-            </span>
+            <ArrowRight className="w-8 h-8 text-on-secondary-container group-hover:text-white group-hover:translate-x-2 transition-all" />
           </div>
         </div>
       </div>

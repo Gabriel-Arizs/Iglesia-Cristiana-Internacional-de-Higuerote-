@@ -38,7 +38,9 @@ export default function VisitUs() {
                   schedule
                 </span>
                 <div>
-                  <h5 className="font-bold text-primary">Horarios de Reunión</h5>
+                  <h5 className="font-bold text-primary">
+                    Horarios de Reunión
+                  </h5>
                   {schedules.map((schedule, index) => (
                     <p key={index} className="text-on-surface-variant">
                       {schedule.day}: {schedule.times.join(" | ")}
@@ -52,7 +54,9 @@ export default function VisitUs() {
                   location_on
                 </span>
                 <div>
-                  <h5 className="font-bold text-primary">Dirección Principal</h5>
+                  <h5 className="font-bold text-primary">
+                    Dirección Principal
+                  </h5>
                   <p className="text-on-surface-variant">{address.street}</p>
                   <p className="text-on-surface-variant">
                     {address.city}, {address.country}

@@ -1,7 +1,8 @@
-import React from "react";
+import { Eye, Sparkles } from "lucide-react";
+import type { JSX } from "react";
 
 interface CardData {
-  icon: string;
+  icon: JSX.Element;
   title: string;
   description: string;
 }
@@ -12,13 +13,13 @@ interface MisionVisionProps {
 
 const defaultCards: CardData[] = [
   {
-    icon: "auto_awesome",
+    icon: <Sparkles />,
     title: "Nuestra Misión",
     description:
       "Establecer el Reino de Dios a través de la excelencia institucional, formando líderes íntegros que transformen su entorno mediante el mensaje eterno de Jesucristo y el servicio desinteresado.",
   },
   {
-    icon: "visibility",
+    icon: <Eye />,
     title: "Nuestra Visión",
     description:
       "Ser referentes globales de una fe madura y arquitectónica, donde la tradición y la innovación convergen para iluminar el futuro de las próximas siete generaciones.",

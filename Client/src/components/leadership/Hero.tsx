@@ -1,29 +1,29 @@
-import { HandHeart } from 'lucide-react';
-import type { GalleryImage } from '../../types';
-import type { HeroProps} from './Hero.types';
+import { HandHeart } from "lucide-react";
+import type { GalleryImage } from "../../types";
+import type { HeroProps } from "./Hero.types";
 
 const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: "./photo1.jpeg",
     alt: "Líder de adoración cantando",
     aspect: "aspect-[3/4]",
-    wrapperClass: "pt-8"
+    wrapperClass: "pt-8",
   },
   {
     src: "./photo2.jpeg",
     alt: "Maestra cariñosa con niños",
-    aspect: "aspect-square"
+    aspect: "aspect-square",
   },
   {
     src: "./photo3.jpeg",
     alt: "Líderes comunitarios conversando",
-    aspect: "aspect-square"
+    aspect: "aspect-square",
   },
   {
     src: "./photo4.jpeg",
     alt: "Líder juvenil con adolescentes",
-    aspect: "aspect-[3/4]"
-  }
+    aspect: "aspect-[3/4]",
+  },
 ];
 
 // Componente interno — no se exporta, es privado al módulo
@@ -34,7 +34,7 @@ function ImageColumn({ images }: { images: GalleryImage[] }) {
         <div
           key={`${img.src}-${i}`}
           className={`rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl 
-                      transition-all duration-300 ${img.aspect} ${img.wrapperClass ?? ''}`}
+                      transition-all duration-300 ${img.aspect} ${img.wrapperClass ?? ""}`}
         >
           <img
             className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
@@ -55,7 +55,6 @@ export function Hero({ images = GALLERY_IMAGES }: HeroProps) {
   return (
     <section className=" relative w-full px-6 md:px-12 py-16 lg:py-24 overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
         <div className="z-10 order-2 lg:order-1">
           <header>
             <span className="text-secondary font-bold tracking-widest text-xs uppercase mb-4 block">
@@ -65,14 +64,17 @@ export function Hero({ images = GALLERY_IMAGES }: HeroProps) {
               Guiados por el <span className="text-primary">Espíritu.</span>
             </h1>
             <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-xl mb-10">
-              Conoce a los hombres y mujeres que dedican su vida a servir, inspirar y caminar
-              junto a nuestra congregación en cada etapa de la vida.
+              Conoce a los hombres y mujeres que dedican su vida a servir,
+              inspirar y caminar junto a nuestra congregación en cada etapa de
+              la vida.
             </p>
           </header>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-primary text-white px-10 py-4 rounded-full font-bold 
+            <button
+              className="bg-primary text-white px-10 py-4 rounded-full font-bold 
                                flex items-center gap-3 hover:bg-primary/95 hover:-translate-y-1 
-                               transition-all shadow-xl active:scale-95">
+                               transition-all shadow-xl active:scale-95"
+            >
               Servir con nosotros
               <HandHeart />
             </button>
@@ -89,7 +91,6 @@ export function Hero({ images = GALLERY_IMAGES }: HeroProps) {
             aria-hidden="true"
           />
         </div>
-
       </div>
     </section>
   );

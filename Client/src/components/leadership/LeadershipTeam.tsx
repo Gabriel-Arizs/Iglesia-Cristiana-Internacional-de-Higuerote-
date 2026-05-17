@@ -7,8 +7,10 @@ interface YouthNetworkCardProps {
 // 1. Tarjeta de Jóvenes (Ya estaba correcta, se mantiene como base)
 function YouthNetworkCard({ className = "" }: YouthNetworkCardProps) {
   return (
-    <div className={`md:col-span-2 group relative overflow-hidden rounded-xl bg-background h-80 border border-outline-variant/30 ${className}`}>
-     <img
+    <div
+      className={`md:col-span-2 group relative overflow-hidden rounded-xl bg-background h-80 border border-outline-variant/30 ${className}`}
+    >
+      <img
         alt="Women Network"
         className="absolute object-top inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         src="./young.jpg"
@@ -20,7 +22,8 @@ function YouthNetworkCard({ className = "" }: YouthNetworkCardProps) {
         </span>
         <h3 className="text-3xl font-bold mb-2">Red de Jóvenes</h3>
         <p className="text-white/80 max-w-md">
-          Coordinada por Mateo y Sofía, enfocada en activar el propósito de la nueva generación.
+          Coordinada por Mateo y Sofía, enfocada en activar el propósito de la
+          nueva generación.
         </p>
       </div>
     </div>
@@ -41,7 +44,8 @@ function MarriageNetworkCard() {
         <div>
           <h3 className="text-2xl font-bold mb-2">Red de Matrimonios</h3>
           <p className="text-white/80 text-sm">
-            Fortaleciendo el núcleo de la sociedad a través de principios bíblicos prácticos.
+            Fortaleciendo el núcleo de la sociedad a través de principios
+            bíblicos prácticos.
           </p>
         </div>
       </div>
@@ -50,8 +54,14 @@ function MarriageNetworkCard() {
 }
 
 const menLeaders = [
-  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDT6fbRNK_orjcb0yNvJ5c3Uk0B39zacVj7ZAMmtu-5yfkX2pTfIK0BwQbsKoMI9g7CvQAOfjlwg3ww7cakiq41NodpUkfxMdEugWpygUV7GnY7l9vqA3RvCmfCaKWPnkb9pQaIZf-45JtE70WntfkBIZC-ZMuL4QPW8AYr6rB9tNVYBSMiauOf-hktDcafCh1dLM-AzJWQzIytyxf7zrEZA5ZLuwfiKzRs9yHqB2Fzqg3JaQZp2aYrBtsEZlUneP0INaWR5gm03pQ", alt: "Leader 1" },
-  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYySxf1DwhLbvzlGpDecgGNAiZSlDe8vxRKYCKSVI7scq3Ax-EViOYLhz_NElF6dzX8tTtUkLPEyQhPRl6TV0OwEdVLzN27JFzsyfeJfH_9X83lIZKTbknfSRcTchFExXHuDFJaNlxgCVmEtJQ4rFkiAEUj1NXeDqpO2WwqEjnvtuGZtpSOpp_aWwtU7l87CXzzoGekl915vLxidRpIPIVScuP0asa1K4r8BNQWQUztlqGsVp-RWg-6wQPeNBjMPq1Mvx7hsyvVXg", alt: "Leader 2" },
+  {
+    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDT6fbRNK_orjcb0yNvJ5c3Uk0B39zacVj7ZAMmtu-5yfkX2pTfIK0BwQbsKoMI9g7CvQAOfjlwg3ww7cakiq41NodpUkfxMdEugWpygUV7GnY7l9vqA3RvCmfCaKWPnkb9pQaIZf-45JtE70WntfkBIZC-ZMuL4QPW8AYr6rB9tNVYBSMiauOf-hktDcafCh1dLM-AzJWQzIytyxf7zrEZA5ZLuwfiKzRs9yHqB2Fzqg3JaQZp2aYrBtsEZlUneP0INaWR5gm03pQ",
+    alt: "Leader 1",
+  },
+  {
+    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYySxf1DwhLbvzlGpDecgGNAiZSlDe8vxRKYCKSVI7scq3Ax-EViOYLhz_NElF6dzX8tTtUkLPEyQhPRl6TV0OwEdVLzN27JFzsyfeJfH_9X83lIZKTbknfSRcTchFExXHuDFJaNlxgCVmEtJQ4rFkiAEUj1NXeDqpO2WwqEjnvtuGZtpSOpp_aWwtU7l87CXzzoGekl915vLxidRpIPIVScuP0asa1K4r8BNQWQUztlqGsVp-RWg-6wQPeNBjMPq1Mvx7hsyvVXg",
+    alt: "Leader 2",
+  },
 ];
 
 // 3. Tarjeta de Hombres (Actualizada con imagen de fondo)
@@ -64,7 +74,7 @@ function MenNetworkCard() {
         src="./men.jpeg" // Cambiar por imagen real
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-      
+
       <div className="relative z-10 p-8 flex flex-col h-full justify-between text-white">
         <div className="mt-8">
           <h3 className="text-2xl font-bold mb-2">Red de Hombres</h3>
@@ -100,14 +110,13 @@ function WomenNetworkCard() {
         src="./women.jpg"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
-      
+
       <div className="relative z-10 p-8 h-full flex flex-col justify-center text-white max-w-lg">
         <h3 className="text-3xl font-bold mb-4">Red de Mujeres</h3>
         <p className="text-white/80 mb-6">
-          Un espacio de crecimiento, sanidad y mentoría para mujeres de todas las edades, bajo la
-          dirección de la Pastora Elena.
+          Un espacio de crecimiento, sanidad y mentoría para mujeres de todas
+          las edades, bajo la dirección de la Pastora Elena.
         </p>
-       
       </div>
     </div>
   );

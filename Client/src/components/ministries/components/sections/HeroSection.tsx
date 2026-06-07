@@ -1,5 +1,12 @@
 import { useEffect, useRef } from "react"
 
+import mosaicKids from "../../../../assets/IMG_20260607_183838_455.jpg"
+import mosaicOutreach from "../../../../assets/IMG_20260607_183851_907.jpg"
+import mosaicGreeting from "../../../../assets/IMG_20260607_183746_042.jpg"
+import mosaicCoffee from "../../../../assets/IMG_20260607_183653_764.jpg"
+import mosaicArch from "../../../../assets/IMG_20260607_183653_806.jpg"
+import mosaicMusic from "../../../../assets/IMG_20260607_183816_822.jpg"
+
 interface MosaicImage {
   src: string
   alt: string
@@ -28,32 +35,32 @@ const mosaicImages: MosaicImage[] = [
     className: "col-span-2 row-span-1"
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuD3vmV8vFp1n2lCphx6mIbKk-8NEFOSQ5F7y5x7g0fURczSXT_UolvKs_T4O7lN6ZWtBxR7p1t02uxXB6xwlNXajmCjThXECV8VexuqE9oGdCOHombnrmt1H--ZzrPpS5hqFovDm4dZsla3zBi03rT7OBPOgqZt3BLpznpCdk_i7CzeEqXPaCwA8KjkExdxL45B9XZ3FkJfBvCSnavdzYVqClA8Ttjcif63BMnKWdcYiRwV9Ks8ZpuPaUskJKxoVjM8FecqaEym1CE",
+    src: mosaicKids,
     alt: "Kids ministry",
     className: "col-span-1 row-span-1"
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBoNPsuHXmGuyRFPfEZcbNL6y2g2tpNb2JITDoSUUGRoNqmnvvQJx-_TcqNPFesS9tX0RTWJyOrjDmQFGZ6M-h2Uv5AFsp71Cme8dhX_Q1XSrvr0E_y6BH2ONPhLcfIWY36NJuut8R8L9V7JH5k4UdVyZTrX3keZvCAKM3r_7DdBXglF6Kx7G96IffaSBoBGuoCaUCNZca_K8dTP4UNcM7bCSlSiFRIJsHuqtuVeT2pOHX7eIkbUzsUE42eDH7b4xE1DobDw72Ujzw",
+    src: mosaicOutreach,
     alt: "Community outreach",
     className: "col-span-1 row-span-2"
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuD3vmV8vFp1n2lCphx6mIbKk-8NEFOSQ5F7y5x7g0fURczSXT_UolvKs_T4O7lN6ZWtBxR7p1t02uxXB6xwlNXajmCjThXECV8VexuqE9oGdCOHombnrmt1H--ZzrPpS5hqFovDm4dZsla3zBi03rT7OBPOgqZt3BLpznpCdk_i7CzeEqXPaCwA8KjkExdxL45B9XZ3FkJfBvCSnavdzYVqClA8Ttjcif63BMnKWdcYiRwV9Ks8ZpuPaUskJKxoVjM8FecqaEym1CE",
+    src: mosaicGreeting,
     alt: "Greeting at door",
     className: "col-span-1 row-span-1"
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDR1JTj5f2pj9cF44yymTJtBx8JwAs5oT0E1y6w_nBFj2TOmDYUDtNSd0WSa3ROdwkACtC_1iYY_ffenap0pLVI32of5O6Z0-Sn2FN54XoEQrv87zweI8_bYd0z5Y23k6Z9LOEqCYBhF9TTc67ndEEPOEZF0DKijEuYSlO0GJTnog73CatDTIlKqiG1xp2cAEk78hlWnjdvfCPaEF8RM1LcQsUAm9-wC_diObUFBeJGYUF_rSwJWwRnvHQA9CveSwqrFUH8L-8914g",
+    src: mosaicCoffee,
     alt: "Coffee and conversation",
     className: "col-span-2 row-span-1"
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBoNPsuHXmGuyRFPfEZcbNL6y2g2tpNb2JITDoSUUGRoNqmnvvQJx-_TcqNPFesS9tX0RTWJyOrjDmQFGZ6M-h2Uv5AFsp71Cme8dhX_Q1XSrvr0E_y6BH2ONPhLcfIWY36NJuut8R8L9V7JH5k4UdVyZTrX3keZvCAKM3r_7DdBXglF6Kx7G96IffaSBoBGuoCaUCNZca_K8dTP4UNcM7bCSlSiFRIJsHuqtuVeT2pOHX7eIkbUzsUE42eDH7b4xE1DobDw72Ujzw",
+    src: mosaicArch,
     alt: "Modern church architecture",
     className: "col-span-1 row-span-1"
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDR1JTj5f2pj9cF44yymTJtBx8JwAs5oT0E1y6w_nBFj2TOmDYUDtNSd0WSa3ROdwkACtC_1iYY_ffenap0pLVI32of5O6Z0-Sn2FN54XoEQrv87zweI8_bYd0z5Y23k6Z9LOEqCYBhF9TTc67ndEEPOEZF0DKijEuYSlO0GJTnog73CatDTIlKqiG1xp2cAEk78hlWnjdvfCPaEF8RM1LcQsUAm9-wC_diObUFBeJGYUF_rSwJWwRnvHQA9CveSwqrFUH8L-8914g",
+    src: mosaicMusic,
     alt: "Music team",
     className: "col-span-1 row-span-1"
   }

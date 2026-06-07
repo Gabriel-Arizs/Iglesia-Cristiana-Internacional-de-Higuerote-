@@ -1,14 +1,14 @@
-import { useState } from "react";
-import type { Ministry } from "../../types";
-import { MinistryTitle } from "../ui";
-import { PRIMARY, SURFACE } from "../../tokens";
+import { useState } from "react"
+import type { Ministry } from "../../types"
+import { MinistryTitle } from "../ui"
+import { PRIMARY, SURFACE } from "../../tokens"
 
 interface IconCardProps {
-  ministry: Ministry;
+  ministry: Ministry
 }
 
 export const IconCard: React.FC<IconCardProps> = ({ ministry }) => {
-  const [hov, setHov] = useState(false);
+  const [hov, setHov] = useState(false)
 
   return (
     <div
@@ -27,7 +27,7 @@ export const IconCard: React.FC<IconCardProps> = ({ ministry }) => {
         justifyContent: "center",
         textAlign: "center",
         padding: 40,
-        cursor: "pointer",
+        cursor: "pointer"
       }}
     >
       {ministry.icon && (
@@ -49,11 +49,11 @@ export const IconCard: React.FC<IconCardProps> = ({ ministry }) => {
           background: PRIMARY,
           transform: hov ? "scaleX(1)" : "scaleX(0)",
           transformOrigin: "left",
-          transition: "transform 0.4s ease",
+          transition: "transform 0.4s ease"
         }}
       />
     </div>
-  );
-};
+  )
+}
 
-export default IconCard;
+export default IconCard

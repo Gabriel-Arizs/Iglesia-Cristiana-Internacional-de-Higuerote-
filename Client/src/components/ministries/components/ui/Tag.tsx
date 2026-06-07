@@ -1,7 +1,7 @@
-import { PRIMARY_LIGHT } from "../../tokens";
+import { PRIMARY_LIGHT } from "../../tokens"
 
 interface TagProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export const Tag: React.FC<TagProps> = ({ children }) => (
@@ -13,11 +13,11 @@ export const Tag: React.FC<TagProps> = ({ children }) => (
       textTransform: "uppercase",
       color: PRIMARY_LIGHT,
       display: "block",
-      marginBottom: 8,
+      marginBottom: 8
     }}
   >
     {children}
   </span>
-);
+)
 
-export default Tag;
+export default Tag

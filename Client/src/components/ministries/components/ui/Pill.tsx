@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { PRIMARY } from "../../tokens";
+import React, { useState } from "react"
+import { PRIMARY } from "../../tokens"
 
 interface PillProps {
-  children: React.ReactNode;
-  light?: boolean;
-  onClick?: () => void;
+  children: React.ReactNode
+  light?: boolean
+  onClick?: () => void
 }
 
 export const Pill: React.FC<PillProps> = ({
   children,
   light = false,
-  onClick,
+  onClick
 }) => {
-  const [hov, setHov] = useState(false);
+  const [hov, setHov] = useState(false)
 
   return (
     <button
@@ -38,12 +38,12 @@ export const Pill: React.FC<PillProps> = ({
         cursor: "pointer",
         transition: "all 0.3s",
         backdropFilter: "blur(8px)",
-        marginTop: 20,
+        marginTop: 20
       }}
     >
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Pill;
+export default Pill

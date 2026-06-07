@@ -1,9 +1,9 @@
-import type { Ministry } from "../../types";
-import { MinistryTitle } from "../ui";
-import { PRIMARY_LIGHT } from "../../tokens";
+import type { Ministry } from "../../types"
+import { MinistryTitle } from "../ui"
+import { PRIMARY_LIGHT } from "../../tokens"
 
 interface BannerCardProps {
-  ministry: Ministry;
+  ministry: Ministry
 }
 
 export const BannerCard: React.FC<BannerCardProps> = ({ ministry }) => (
@@ -14,7 +14,7 @@ export const BannerCard: React.FC<BannerCardProps> = ({ ministry }) => (
       borderRadius: 20,
       overflow: "hidden",
       height: 320,
-      background: PRIMARY_LIGHT,
+      background: PRIMARY_LIGHT
     }}
   >
     <div
@@ -24,7 +24,7 @@ export const BannerCard: React.FC<BannerCardProps> = ({ ministry }) => (
         top: "50%",
         transform: "translateY(-50%)",
         opacity: 0.08,
-        fontSize: 160,
+        fontSize: 160
       }}
     >
       🌍
@@ -37,7 +37,7 @@ export const BannerCard: React.FC<BannerCardProps> = ({ ministry }) => (
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        height: "100%",
+        height: "100%"
       }}
     >
       <MinistryTitle size="lg" light>
@@ -48,7 +48,7 @@ export const BannerCard: React.FC<BannerCardProps> = ({ ministry }) => (
           color: "rgba(200,220,255,0.85)",
           maxWidth: 480,
           fontSize: 17,
-          marginTop: 12,
+          marginTop: 12
         }}
       >
         {ministry.subtitle}
@@ -59,7 +59,7 @@ export const BannerCard: React.FC<BannerCardProps> = ({ ministry }) => (
             marginTop: 24,
             display: "flex",
             alignItems: "center",
-            gap: 12,
+            gap: 12
           }}
         >
           <span style={{ fontSize: 20 }}>🌐</span>
@@ -69,7 +69,7 @@ export const BannerCard: React.FC<BannerCardProps> = ({ ministry }) => (
               fontSize: 13,
               fontWeight: 700,
               textTransform: "uppercase",
-              letterSpacing: "0.15em",
+              letterSpacing: "0.15em"
             }}
           >
             {ministry.cta}
@@ -78,6 +78,6 @@ export const BannerCard: React.FC<BannerCardProps> = ({ ministry }) => (
       )}
     </div>
   </div>
-);
+)
 
-export default BannerCard;
+export default BannerCard

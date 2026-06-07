@@ -1,14 +1,14 @@
-import { useState } from "react";
-import type { Ministry } from "../../types";
-import { MinistryTitle } from "../ui";
-import { PRIMARY_LIGHT } from "../../tokens";
+import { useState } from "react"
+import type { Ministry } from "../../types"
+import { MinistryTitle } from "../ui"
+import { PRIMARY_LIGHT } from "../../tokens"
 
 interface TallCardProps {
-  ministry: Ministry;
+  ministry: Ministry
 }
 
 export const TallCard: React.FC<TallCardProps> = ({ ministry }) => {
-  const [hov, setHov] = useState(false);
+  const [hov, setHov] = useState(false)
 
   return (
     <div
@@ -21,7 +21,7 @@ export const TallCard: React.FC<TallCardProps> = ({ ministry }) => {
         overflow: "hidden",
         height: 560,
         background: "#e8f0f8",
-        cursor: "pointer",
+        cursor: "pointer"
       }}
     >
       <img
@@ -36,7 +36,7 @@ export const TallCard: React.FC<TallCardProps> = ({ ministry }) => {
           opacity: 0.55,
           mixBlendMode: "multiply",
           transform: hov ? "scale(1.1)" : "scale(1)",
-          transition: "transform 1s ease",
+          transition: "transform 1s ease"
         }}
       />
       <div
@@ -44,7 +44,7 @@ export const TallCard: React.FC<TallCardProps> = ({ ministry }) => {
           position: "absolute",
           inset: 0,
           background: hov ? "rgba(26,58,92,0.08)" : "rgba(26,58,92,0.28)",
-          transition: "background 0.5s",
+          transition: "background 0.5s"
         }}
       />
       <div style={{ position: "absolute", top: 40, left: 32 }}>
@@ -55,7 +55,7 @@ export const TallCard: React.FC<TallCardProps> = ({ ministry }) => {
             fontWeight: 500,
             maxWidth: 200,
             marginTop: 8,
-            fontSize: 14,
+            fontSize: 14
           }}
         >
           {ministry.subtitle}
@@ -69,7 +69,7 @@ export const TallCard: React.FC<TallCardProps> = ({ ministry }) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default TallCard;
+export default TallCard

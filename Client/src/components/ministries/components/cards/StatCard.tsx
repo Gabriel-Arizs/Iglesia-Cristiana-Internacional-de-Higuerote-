@@ -1,9 +1,9 @@
-import type { Ministry } from "../../types";
-import { MinistryTitle, Tag } from "../ui";
-import { PRIMARY } from "../../tokens";
+import type { Ministry } from "../../types"
+import { MinistryTitle, Tag } from "../ui"
+import { PRIMARY } from "../../tokens"
 
 interface StatCardProps {
-  ministry: Ministry;
+  ministry: Ministry
 }
 
 export const StatCard: React.FC<StatCardProps> = ({ ministry }) => (
@@ -20,7 +20,7 @@ export const StatCard: React.FC<StatCardProps> = ({ ministry }) => (
       borderRadius: 20,
       border: "1px solid #e8eef5",
       position: "relative",
-      overflow: "hidden",
+      overflow: "hidden"
     }}
   >
     <div
@@ -31,7 +31,7 @@ export const StatCard: React.FC<StatCardProps> = ({ ministry }) => (
         width: 96,
         height: 96,
         background: "rgba(26,58,92,0.05)",
-        borderRadius: "50%",
+        borderRadius: "50%"
       }}
     />
     {ministry.tag && <Tag>{ministry.tag}</Tag>}
@@ -41,7 +41,7 @@ export const StatCard: React.FC<StatCardProps> = ({ ministry }) => (
         color: "#64748b",
         fontSize: 13,
         marginTop: 12,
-        marginBottom: 20,
+        marginBottom: 20
       }}
     >
       {ministry.subtitle}
@@ -56,7 +56,7 @@ export const StatCard: React.FC<StatCardProps> = ({ ministry }) => (
             fontSize: 12,
             color: "#64748b",
             maxWidth: 100,
-            textAlign: "left",
+            textAlign: "left"
           }}
         >
           {ministry.statLabel}
@@ -64,6 +64,6 @@ export const StatCard: React.FC<StatCardProps> = ({ ministry }) => (
       </div>
     )}
   </div>
-);
+)
 
-export default StatCard;
+export default StatCard

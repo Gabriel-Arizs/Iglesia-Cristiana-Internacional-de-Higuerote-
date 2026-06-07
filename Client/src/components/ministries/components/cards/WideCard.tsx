@@ -1,14 +1,14 @@
-import { useState } from "react";
-import type { Ministry } from "../../types";
-import { MinistryTitle } from "../ui";
-import { OVERLAY_GRAD } from "../../tokens";
+import { useState } from "react"
+import type { Ministry } from "../../types"
+import { MinistryTitle } from "../ui"
+import { OVERLAY_GRAD } from "../../tokens"
 
 interface WideCardProps {
-  ministry: Ministry;
+  ministry: Ministry
 }
 
 export const WideCard: React.FC<WideCardProps> = ({ ministry }) => {
-  const [hov, setHov] = useState(false);
+  const [hov, setHov] = useState(false)
 
   return (
     <div
@@ -20,7 +20,7 @@ export const WideCard: React.FC<WideCardProps> = ({ ministry }) => {
         borderRadius: 20,
         overflow: "hidden",
         height: 380,
-        cursor: "pointer",
+        cursor: "pointer"
       }}
     >
       <img
@@ -31,7 +31,7 @@ export const WideCard: React.FC<WideCardProps> = ({ ministry }) => {
           height: "100%",
           objectFit: "cover",
           filter: hov ? "none" : "grayscale(100%) brightness(0.9)",
-          transition: "filter 0.7s ease",
+          transition: "filter 0.7s ease"
         }}
       />
       <div
@@ -48,7 +48,7 @@ export const WideCard: React.FC<WideCardProps> = ({ ministry }) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default WideCard;
+export default WideCard

@@ -1,14 +1,14 @@
-import { useState } from "react";
-import type { Ministry } from "../../types";
-import { MinistryTitle, Pill } from "../ui";
-import { PRIMARY, OVERLAY_GRAD } from "../../tokens";
+import { useState } from "react"
+import type { Ministry } from "../../types"
+import { MinistryTitle, Pill } from "../ui"
+import { PRIMARY, OVERLAY_GRAD } from "../../tokens"
 
 interface FeatureCardProps {
-  ministry: Ministry;
+  ministry: Ministry
 }
 
 export const FeatureCard: React.FC<FeatureCardProps> = ({ ministry }) => {
-  const [hov, setHov] = useState(false);
+  const [hov, setHov] = useState(false)
 
   return (
     <div
@@ -21,7 +21,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ ministry }) => {
         overflow: "hidden",
         height: 560,
         background: PRIMARY,
-        cursor: "pointer",
+        cursor: "pointer"
       }}
     >
       <img
@@ -36,7 +36,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ ministry }) => {
           filter: hov ? "none" : "grayscale(100%)",
           opacity: 0.6,
           transform: hov ? "scale(1)" : "scale(1.06)",
-          transition: "all 1s ease",
+          transition: "all 1s ease"
         }}
       />
       <div
@@ -52,7 +52,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ ministry }) => {
             maxWidth: 460,
             fontSize: 17,
             lineHeight: 1.6,
-            marginTop: 12,
+            marginTop: 12
           }}
         >
           {ministry.subtitle}
@@ -60,5 +60,5 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ ministry }) => {
         {ministry.cta && <Pill light>{ministry.cta}</Pill>}
       </div>
     </div>
-  );
-};
+  )
+}

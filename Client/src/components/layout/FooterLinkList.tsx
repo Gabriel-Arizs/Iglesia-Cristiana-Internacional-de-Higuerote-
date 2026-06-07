@@ -1,4 +1,4 @@
-import type { FooterLinkListProps } from "../types/Footer";
+import type { FooterLinkListProps } from "../types/Footer"
 
 export function FooterLinkList({ title, items }: FooterLinkListProps) {
   return (
@@ -19,5 +19,5 @@ export function FooterLinkList({ title, items }: FooterLinkListProps) {
         ))}
       </ul>
     </div>
-  );
+  )
 }

@@ -1,29 +1,29 @@
-import type { FooterLinks } from "../types/Footer";
-import { FooterLinkList } from "./FooterLinkList";
+import type { FooterLinks } from "../types/Footer"
+import { FooterLinkList } from "./FooterLinkList"
 
 const FOOTER_LINKS: FooterLinks = {
   church: [
     { label: "Nuestra Sede", href: "#" },
     { label: "Pastores", href: "#" },
     { label: "Visión G12", href: "#" },
-    { label: "Donaciones", href: "#" },
+    { label: "Donaciones", href: "#" }
   ],
   ministries: [
     { label: "Somos Uno", href: "#" },
     { label: "Kids", href: "#" },
     { label: "Grupos de Vida", href: "#" },
-    { label: "Liderazgo", href: "#" },
+    { label: "Liderazgo", href: "#" }
   ],
   contact: [
     { label: "info@mci.org", href: "mailto:info@mci.org" },
     { label: "+57 (1) 364 9000", href: "tel:+5713649000" },
     { label: "Privacidad", href: "#" },
-    { label: "Términos", href: "#" },
-  ],
-};
+    { label: "Términos", href: "#" }
+  ]
+}
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-slate-50 dark:bg-slate-900 w-full py-12 px-8">
@@ -57,7 +57,7 @@ export default function Footer() {
         </p>
       </div>
     </footer>
-  );
+  )
 }
 
 // Mini-componente auxiliar para evitar repetición
@@ -69,5 +69,5 @@ function SocialIcon({ icon }: { icon: string }) {
     >
       <span className="material-symbols-outlined">{icon}</span>
     </a>
-  );
+  )
 }

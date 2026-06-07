@@ -1,13 +1,13 @@
-import { NavLink } from "react-router"; // Importante: usar NavLink
-import type { NavItem } from "../types/navBar";
+import { NavLink } from "react-router" // Importante: usar NavLink
+import type { NavItem } from "../types/navBar"
 
 const NAV_LINKS: NavItem[] = [
   { label: "Inicio", href: "/" },
   { label: "Ministerios", href: "/ministries" }, // Cambié # por rutas sugeridas
   { label: "Liderazgo", href: "/leadership" },
   { label: "Nuestra Sede", href: "/sede" },
-  { label: "Legado", href: "/our-legacy" },
-];
+  { label: "Legado", href: "/our-legacy" }
+]
 
 export function NavBar() {
   return (
@@ -49,7 +49,7 @@ export function NavBar() {
         </button>
       </div>
     </nav>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

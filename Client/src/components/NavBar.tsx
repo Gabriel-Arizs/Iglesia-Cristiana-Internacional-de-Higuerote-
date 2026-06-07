@@ -3,7 +3,7 @@ import type { NavItem } from "../types/navBar";
 
 const NAV_LINKS: NavItem[] = [
   { label: "Inicio", href: "/" },
-  { label: "Ministerios", href: "/ministerios" }, // Cambié # por rutas sugeridas
+  { label: "Ministerios", href: "/ministries" }, // Cambié # por rutas sugeridas
   { label: "Liderazgo", href: "/leadership" },
   { label: "Nuestra Sede", href: "/sede" },
   { label: "Legado", href: "/our-legacy" },

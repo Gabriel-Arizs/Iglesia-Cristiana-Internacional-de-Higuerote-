@@ -1,7 +1,7 @@
-import type { Ministry } from "../types/ministry";
+import type { Ministry } from "../../../../types/ministry"
 
 interface MinistryCardProps {
-  ministry: Ministry;
+  ministry: Ministry
 }
 
 export function MinistryCard({ ministry }: MinistryCardProps) {
@@ -23,7 +23,7 @@ export function MinistryCard({ ministry }: MinistryCardProps) {
         <p className="text-white/80 max-w-md">{ministry.description}</p>
       </div>
     </div>
-  );
+  )
 }
 
-export default MinistryCard;
+export default MinistryCard

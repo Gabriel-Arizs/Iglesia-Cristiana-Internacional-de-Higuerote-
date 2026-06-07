@@ -53,5 +53,5 @@ export default function OurVenue() {
         </div>
       </div>
     </section>
-  );
+  )
 }

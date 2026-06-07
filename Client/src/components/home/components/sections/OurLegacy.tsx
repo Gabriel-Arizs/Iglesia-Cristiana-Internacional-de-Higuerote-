@@ -1,4 +1,4 @@
-export default function OurLegacy() {
+export default function OurLegacySection() {
   return (
     <section className="py-32 px-8 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto relative">
@@ -56,5 +56,5 @@ export default function OurLegacy() {
         </div>
       </div>
     </section>
-  );
+  )
 }

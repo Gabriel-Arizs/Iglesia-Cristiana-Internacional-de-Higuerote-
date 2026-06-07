@@ -1,11 +1,11 @@
-import type { HeroSectionProps } from "../types/Hero.types";
+import type { HeroSectionProps } from "../../../../types/Hero.types"
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   title = "Un nuevo comienzo en Jesús, Salvación y esperanza para tu familia.",
   subtitle = "Nos reunimos para adorar, ser transformados y compartir el mensaje de esperanza con nuestra ciudad y el mundo.",
   backgroundImage = "https://images.unsplash.com/photo-1510590337019-5ef8d3d32116?auto=format&fit=crop&q=80",
   buttonText = "Nosotros",
-  onButtonClick,
+  onButtonClick
 }) => {
   return (
     <section className="relative pt-24 pb-16 px-4 md:px-8 bg-background">
@@ -37,7 +37,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

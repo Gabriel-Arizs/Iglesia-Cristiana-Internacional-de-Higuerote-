@@ -1,26 +1,26 @@
-import type { VisitDetails } from "../types/visitUs";
+import type { VisitDetails } from "../types/visitUs"
 
 const VISIT_US_DATA: VisitDetails = {
   title: "Visítanos este Domingo",
   schedules: [
     {
       day: "Domingos",
-      times: ["7:00 AM", "9:00 AM", "11:30 AM", "5:00 PM"],
+      times: ["7:00 AM", "9:00 AM", "11:30 AM", "5:00 PM"]
     },
     {
       day: "Martes",
-      times: ["Oración 6:00 AM"],
-    },
+      times: ["Oración 6:00 AM"]
+    }
   ],
   address: {
     street: "Calle 22c # 31-01, Sector Corferias",
     city: "Bogotá",
-    country: "Colombia",
-  },
-};
+    country: "Colombia"
+  }
+}
 
 export default function VisitUs() {
-  const { title, schedules, address } = VISIT_US_DATA;
+  const { title, schedules, address } = VISIT_US_DATA
 
   return (
     <section className="py-24 px-8 bg-surface-container">
@@ -90,5 +90,5 @@ export default function VisitUs() {
         </div>
       </div>
     </section>
-  );
+  )
 }

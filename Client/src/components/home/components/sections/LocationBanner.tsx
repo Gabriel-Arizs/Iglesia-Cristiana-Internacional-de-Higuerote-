@@ -33,5 +33,5 @@ export default function LocationBanner() {
         </div>
       </div>
     </section>
-  );
+  )
 }

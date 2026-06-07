@@ -1,6 +1,6 @@
-import type { Testimonial } from "../types/testimonial";
+import type { Testimonial } from "../../../../types/testimonial"
 interface TestimonialCardProps {
-  testimonial: Testimonial;
+  testimonial: Testimonial
 }
 
 export function TestimonialCard({ testimonial }: TestimonialCardProps) {
@@ -25,7 +25,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
         Testimonio de {testimonial.author}
       </p>
     </div>
-  );
+  )
 }
 
-export default TestimonialCard;
+export default TestimonialCard

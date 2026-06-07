@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 
 interface CTASectionProps {
-  title?: React.ReactNode;
-  description?: string;
-  primaryButtonText?: string;
-  secondaryLinkText?: string;
-  secondaryLinkHref?: string;
-  onPrimaryClick?: () => void;
+  title?: React.ReactNode
+  description?: string
+  primaryButtonText?: string
+  secondaryLinkText?: string
+  secondaryLinkHref?: string
+  onPrimaryClick?: () => void
 }
 
 const CTASection: React.FC<CTASectionProps> = ({
@@ -21,7 +21,7 @@ const CTASection: React.FC<CTASectionProps> = ({
   primaryButtonText = "Quiero Unirme",
   secondaryLinkText = "Ver eventos para jóvenes",
   secondaryLinkHref = "#",
-  onPrimaryClick,
+  onPrimaryClick
 }) => {
   return (
     <section className="py-24 bg-surface-container-low">
@@ -54,7 +54,7 @@ const CTASection: React.FC<CTASectionProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CTASection;
+export default CTASection

@@ -1,14 +1,14 @@
-import { Eye, Sparkles } from "lucide-react";
-import type { JSX } from "react";
+import { Eye, Sparkles } from "lucide-react"
+import type { JSX } from "react"
 
 interface CardData {
-  icon: JSX.Element;
-  title: string;
-  description: string;
+  icon: JSX.Element
+  title: string
+  description: string
 }
 
 interface MisionVisionProps {
-  cards?: CardData[];
+  cards?: CardData[]
 }
 
 const defaultCards: CardData[] = [
@@ -16,18 +16,18 @@ const defaultCards: CardData[] = [
     icon: <Sparkles />,
     title: "Nuestra Misión",
     description:
-      "Establecer el Reino de Dios a través de la excelencia institucional, formando líderes íntegros que transformen su entorno mediante el mensaje eterno de Jesucristo y el servicio desinteresado.",
+      "Establecer el Reino de Dios a través de la excelencia institucional, formando líderes íntegros que transformen su entorno mediante el mensaje eterno de Jesucristo y el servicio desinteresado."
   },
   {
     icon: <Eye />,
     title: "Nuestra Visión",
     description:
-      "Ser referentes globales de una fe madura y arquitectónica, donde la tradición y la innovación convergen para iluminar el futuro de las próximas siete generaciones.",
-  },
-];
+      "Ser referentes globales de una fe madura y arquitectónica, donde la tradición y la innovación convergen para iluminar el futuro de las próximas siete generaciones."
+  }
+]
 
 const MisionVision: React.FC<MisionVisionProps> = ({
-  cards = defaultCards,
+  cards = defaultCards
 }) => {
   return (
     <section className="py-24 bg-surface-container-low">
@@ -54,7 +54,7 @@ const MisionVision: React.FC<MisionVisionProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default MisionVision;
+export default MisionVision

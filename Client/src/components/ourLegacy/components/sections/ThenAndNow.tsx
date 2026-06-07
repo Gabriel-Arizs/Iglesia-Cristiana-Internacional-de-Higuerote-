@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 
 export interface EraItem {
-  periodLabel: string;
-  title: string;
-  description: string;
+  periodLabel: string
+  title: string
+  description: string
 }
 
 interface ThenAndNowProps {
-  eras?: EraItem[];
-  modernImageUrl?: string;
-  vintageImageUrl?: string;
-  floatingQuote?: string;
+  eras?: EraItem[]
+  modernImageUrl?: string
+  vintageImageUrl?: string
+  floatingQuote?: string
 }
 
 const defaultEras: EraItem[] = [
@@ -18,23 +18,23 @@ const defaultEras: EraItem[] = [
     periodLabel: "Fundación (1950 - 1980)",
     title: "El Sacrificio de los Pioneros",
     description:
-      "Nuestros fundadores caminaron por fe cuando no había caminos. Su visión arquitectónica no solo construyó muros, sino un refugio espiritual para la ciudad.",
+      "Nuestros fundadores caminaron por fe cuando no había caminos. Su visión arquitectónica no solo construyó muros, sino un refugio espiritual para la ciudad."
   },
   {
     periodLabel: "Actualidad (2020 - Presente)",
     title: "Liderazgo Dinámico",
     description:
-      "Hoy, transformamos el espacio digital con la misma pasión, llevando el mensaje a plataformas globales y conectando con el corazón de la Generación Z.",
-  },
-];
+      "Hoy, transformamos el espacio digital con la misma pasión, llevando el mensaje a plataformas globales y conectando con el corazón de la Generación Z."
+  }
+]
 
 const ThenAndNow: React.FC<ThenAndNowProps> = ({
   eras = defaultEras,
   modernImageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuCpJo6-4VtIBkMKNkpEGb14lQ5eyO3fxAp5pOPz4aILtrAS0AVbsC2qEQKMbE8ql-QkQgheGgw05GmA7iOv9a6PxaL-VszCE0Fdw5r5CIjbfl7SZdTkI2eJFgEPM-J6m8794naTtVtDto_PMZBhcNn7wXxQnjbDsgIUMeJM_v-2wRrNusnTM1RELVBFlSEguq7_PFngJ0IOZ9Eog69xpj-Lh7L5LC1EWBuYay53HyuNixuityHLF3M_hwQuJEYt0tQvHXMY6MbYZCA",
   vintageImageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuBFWSpb5sufL6uRemAu3i68TGRQO5rxabmD8GbG0G29OOohv7u4l_UIWAdzltg-RY15rDe8SNHnXSiUgUMwTSTrXMPInocPfo4wIs0KhK6WhydzdMpuuvX9Gbw1mc80WdAq_74GpW_Jt3Qp9qd1Q0Z9IJpUfXObkfqaUTZbGuB1fnpQ0qTPWR5SMqcbO8cIIca5id_4Xs0-7sk5-VsEBiOahhBQBjvbNoH1-E_zjNIyFkdOpAak0l-czRC2RALpZZs-cQQj94KXl7A",
-  floatingQuote = '"El legado no es lo que dejamos, sino en quién nos convertimos."',
+  floatingQuote = '"El legado no es lo que dejamos, sino en quién nos convertimos."'
 }) => {
-  const borderColors = ["border-secondary-container", "border-primary"];
+  const borderColors = ["border-secondary-container", "border-primary"]
 
   return (
     <section className="py-24 relative overflow-hidden">
@@ -101,7 +101,7 @@ const ThenAndNow: React.FC<ThenAndNowProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ThenAndNow;
+export default ThenAndNow

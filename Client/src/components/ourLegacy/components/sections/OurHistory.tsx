@@ -1,16 +1,16 @@
-import { ArrowRight } from "lucide-react";
-import React from "react";
+import { ArrowRight } from "lucide-react"
+import React from "react"
 
 interface NuestraHistoriaProps {
-  label?: string;
-  title?: string;
-  paragraphs?: string[];
-  linkText?: string;
-  linkHref?: string;
-  imageUrl?: string;
-  imageAlt?: string;
-  quote?: string;
-  quoteAuthor?: string;
+  label?: string
+  title?: string
+  paragraphs?: string[]
+  linkText?: string
+  linkHref?: string
+  imageUrl?: string
+  imageAlt?: string
+  quote?: string
+  quoteAuthor?: string
 }
 
 const NuestraHistoria: React.FC<NuestraHistoriaProps> = ({
@@ -18,14 +18,14 @@ const NuestraHistoria: React.FC<NuestraHistoriaProps> = ({
   title = "Una visión que trasciende el tiempo.",
   paragraphs = [
     "En el corazón de nuestra congregación yace una narrativa de fe inquebrantable. Lo que comenzó como un pequeño grupo de oración en un hogar local, se ha transformado en un faro de esperanza institucional para miles.",
-    "Nuestro legado no se mide en metros cuadrados ni en cifras, sino en las vidas restauradas y en los valores eternos que hemos sembrado en cada rincón de nuestra comunidad. Cada piedra de este santuario cuenta una historia de sacrificio y victoria.",
+    "Nuestro legado no se mide en metros cuadrados ni en cifras, sino en las vidas restauradas y en los valores eternos que hemos sembrado en cada rincón de nuestra comunidad. Cada piedra de este santuario cuenta una historia de sacrificio y victoria."
   ],
   linkText = "Descubre el inicio",
   linkHref = "#",
   imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuDkIBp6eM7O837MMRMvQ_cDLoPBrOVLfecvhSZRt7OHlvWQYl7TRLMvsDzhn9AkwcOlbIspOsQ81xrmiklf3RrCBxYg154R3U_ZGo7e_Ekdbb-vmPnAiO1uJtf7Sn5bFxMSn07y-20YVxL0w6GO-8Gan0aQCpS1gXnXgJKoTiA5oWncmeh0Y_5XJshd7tJ7Ezd-HyxOFaJ5vQcP4v8nFYhXVuHrTYfLwP1asoajhVmD9Ixv-WqeXBak9xIWTNLjItpVXNbjXb1OE7E",
   imageAlt = "Historia",
   quote = '"La fe de ayer es el cimiento de nuestra gloria futura."',
-  quoteAuthor = "Fundadores ICIH, 1984",
+  quoteAuthor = "Fundadores ICIH, 1984"
 }) => {
   return (
     <section className="py-24 bg-surface">
@@ -80,7 +80,7 @@ const NuestraHistoria: React.FC<NuestraHistoriaProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default NuestraHistoria;
+export default NuestraHistoria

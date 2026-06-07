@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 
 interface HeroLegadoProps {
-  badge?: string;
-  title?: React.ReactNode;
-  description?: string;
-  primaryButtonText?: string;
-  secondaryButtonText?: string;
-  onPrimaryClick?: () => void;
-  onSecondaryClick?: () => void;
-  backgroundImageUrl?: string;
-  foregroundImageUrl?: string;
-  vintageImageUrl?: string;
+  badge?: string
+  title?: React.ReactNode
+  description?: string
+  primaryButtonText?: string
+  secondaryButtonText?: string
+  onPrimaryClick?: () => void
+  onSecondaryClick?: () => void
+  backgroundImageUrl?: string
+  foregroundImageUrl?: string
+  vintageImageUrl?: string
 }
 
 const HeroLegado: React.FC<HeroLegadoProps> = ({
@@ -33,7 +33,7 @@ const HeroLegado: React.FC<HeroLegadoProps> = ({
   onSecondaryClick,
   backgroundImageUrl = "./menLegacy.jpg",
   foregroundImageUrl = "./womenLegacy.jpg",
-  vintageImageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuCGJ9-mANmJZcg8-XMSfj7j9hNxgSW6qz7QlrJKCuvMScvk-hiKyRyVNzABkIVbbmPoDI1gPO_-tJmFwK1RlBwgQ-RhiV6Bmc5I4IZzdsgfNIy4-eRbTHu9m5VbghQTilao3rLSL5R9fADAFEkukvfIMecV2bIUIVHdhK0nARpUh9RPUNwvMutPkXCG0aU_oHykn5H-FUrDLBe5nchMoaHq9L7YDilOHW88y_ERj6U0dRMqfY9F-PvOmEKk4jW-_Nc97W7wLK0g12I",
+  vintageImageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuCGJ9-mANmJZcg8-XMSfj7j9hNxgSW6qz7QlrJKCuvMScvk-hiKyRyVNzABkIVbbmPoDI1gPO_-tJmFwK1RlBwgQ-RhiV6Bmc5I4IZzdsgfNIy4-eRbTHu9m5VbghQTilao3rLSL5R9fADAFEkukvfIMecV2bIUIVHdhK0nARpUh9RPUNwvMutPkXCG0aU_oHykn5H-FUrDLBe5nchMoaHq9L7YDilOHW88y_ERj6U0dRMqfY9F-PvOmEKk4jW-_Nc97W7wLK0g12I"
 }) => {
   return (
     <section className="relative min-h-[921px] flex items-center overflow-hidden bg-primary">
@@ -95,7 +95,7 @@ const HeroLegado: React.FC<HeroLegadoProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroLegado;
+export default HeroLegado

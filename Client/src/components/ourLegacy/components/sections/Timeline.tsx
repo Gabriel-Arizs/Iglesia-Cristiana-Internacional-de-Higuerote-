@@ -1,17 +1,17 @@
-import { Globe, Star, Church } from "lucide-react";
-import type { JSX } from "react";
+import { Globe, Star, Church } from "lucide-react"
+import type { JSX } from "react"
 
 export interface TimelineItem {
-  year: string;
-  icon: JSX.Element;
-  title: string;
-  description: string;
+  year: string
+  icon: JSX.Element
+  title: string
+  description: string
 }
 
 interface TimelineProps {
-  label?: string;
-  title?: string;
-  items?: TimelineItem[];
+  label?: string
+  title?: string
+  items?: TimelineItem[]
 }
 
 const defaultItems: TimelineItem[] = [
@@ -20,28 +20,28 @@ const defaultItems: TimelineItem[] = [
     icon: <Star />,
     title: "La Semilla de Fe",
     description:
-      "Fundación de la primera congregación bajo una visión de restauración familiar profunda.",
+      "Fundación de la primera congregación bajo una visión de restauración familiar profunda."
   },
   {
     year: "2005",
     icon: <Church />,
     title: "Expansión Arquitectónica",
     description:
-      "Consagración de nuestro actual santuario, un espacio diseñado para la excelencia y el encuentro.",
+      "Consagración de nuestro actual santuario, un espacio diseñado para la excelencia y el encuentro."
   },
   {
     year: "2020",
     icon: <Globe />,
     title: "Trascendencia Digital",
     description:
-      "Lanzamiento del ministerio global, rompiendo fronteras físicas para llevar luz a cada nación.",
-  },
-];
+      "Lanzamiento del ministerio global, rompiendo fronteras físicas para llevar luz a cada nación."
+  }
+]
 
 const Timeline: React.FC<TimelineProps> = ({
   label = "Nuestra Trayectoria",
   title = "Momentos que definieron nuestro ADN.",
-  items = defaultItems,
+  items = defaultItems
 }) => {
   return (
     <section className="py-24 bg-surface overflow-hidden">
@@ -89,7 +89,7 @@ const Timeline: React.FC<TimelineProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Timeline;
+export default Timeline

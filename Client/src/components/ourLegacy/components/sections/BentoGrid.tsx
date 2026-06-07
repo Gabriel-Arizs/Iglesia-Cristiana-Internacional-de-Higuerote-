@@ -1,42 +1,42 @@
-import { ArrowRight } from "lucide-react";
-import React from "react";
+import { ArrowRight } from "lucide-react"
+import React from "react"
 
 interface BentoRootsCard {
-  year?: string;
-  title?: string;
-  description?: string;
-  buttonText?: string;
-  onButtonClick?: () => void;
-  imageUrl?: string;
+  year?: string
+  title?: string
+  description?: string
+  buttonText?: string
+  onButtonClick?: () => void
+  imageUrl?: string
 }
 
 interface BentoYouthCard {
-  title?: string;
-  description?: string;
-  linkText?: string;
-  linkHref?: string;
-  imageUrl?: string;
+  title?: string
+  description?: string
+  linkText?: string
+  linkHref?: string
+  imageUrl?: string
 }
 
 interface BentoStatCard {
-  value?: string;
-  label?: string;
-  icon?: string;
+  value?: string
+  label?: string
+  icon?: string
 }
 
 interface BentoDonateCard {
-  title?: string;
-  description?: string;
-  onClick?: () => void;
+  title?: string
+  description?: string
+  onClick?: () => void
 }
 
 interface BentoGridProps {
-  sectionTitle?: string;
-  sectionDescription?: string;
-  roots?: BentoRootsCard;
-  youth?: BentoYouthCard;
-  stat?: BentoStatCard;
-  donate?: BentoDonateCard;
+  sectionTitle?: string
+  sectionDescription?: string
+  roots?: BentoRootsCard
+  youth?: BentoYouthCard
+  stat?: BentoStatCard
+  donate?: BentoDonateCard
 }
 
 const BentoGrid: React.FC<BentoGridProps> = ({
@@ -49,7 +49,7 @@ const BentoGrid: React.FC<BentoGridProps> = ({
       "Todo comenzó con una oración en una pequeña sala. Hoy, esa misma fe sostiene a miles.",
     buttonText: "Ver el documental",
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCSAzQvpzT5Xy3Ntir5A0W2ixgPU1kQ9mAeEPZq_u4HjUSE9_5Fc8TztKzQ1h_upJcvWHUaxOSIdAggloxjIPelbni5eNIDhhJ7zf4dGZ3lhu6F8-D3WUUpGsF3IoQ7yg8vT3qFTVxXT7ThirdFns3iDqWvU-Tml2B0_XbNEnPfI4LeRVk5_gR_v7t1i4FyI23jBCgVHoM6Xqkojg1QV0h1E2RHo0zEoAKat4xgZqA2sQ2FZFioBNNbxRRgTApXV267n8L6stT0ShI",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCSAzQvpzT5Xy3Ntir5A0W2ixgPU1kQ9mAeEPZq_u4HjUSE9_5Fc8TztKzQ1h_upJcvWHUaxOSIdAggloxjIPelbni5eNIDhhJ7zf4dGZ3lhu6F8-D3WUUpGsF3IoQ7yg8vT3qFTVxXT7ThirdFns3iDqWvU-Tml2B0_XbNEnPfI4LeRVk5_gR_v7t1i4FyI23jBCgVHoM6Xqkojg1QV0h1E2RHo0zEoAKat4xgZqA2sQ2FZFioBNNbxRRgTApXV267n8L6stT0ShI"
   },
   youth = {
     title: "ADN Joven",
@@ -58,17 +58,17 @@ const BentoGrid: React.FC<BentoGridProps> = ({
     linkText: "Conoce ICIH Youth",
     linkHref: "#",
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBQhNQc5P3Qh0FL8QY-bJGxCAWkFZyh6ayf1XEntAmjyHZRhx2rWTC_b8eYZgNHbG6jvWijKk6NGARjYL3cv_29UkJcUGhQhrS_KR8ovm0TZDeM128xaBVzz3ktVixf6rNgQVY5Bzkl5DWgNNekLyk3vpyPeJrAMIZgtGzfSl9ktZHu8gtaHhe7ncrTjl-F42vi3FiSpcJe-gHHsYw_CpF47fR7-noZf22q45TIoV0_KQhzE77eP77-s8RlVEBI-0e6cIEm2x2ceu8",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBQhNQc5P3Qh0FL8QY-bJGxCAWkFZyh6ayf1XEntAmjyHZRhx2rWTC_b8eYZgNHbG6jvWijKk6NGARjYL3cv_29UkJcUGhQhrS_KR8ovm0TZDeM128xaBVzz3ktVixf6rNgQVY5Bzkl5DWgNNekLyk3vpyPeJrAMIZgtGzfSl9ktZHu8gtaHhe7ncrTjl-F42vi3FiSpcJe-gHHsYw_CpF47fR7-noZf22q45TIoV0_KQhzE77eP77-s8RlVEBI-0e6cIEm2x2ceu8"
   },
   stat = {
     value: "12+",
     label: "Naciones Alcanzadas",
-    icon: "public",
+    icon: "public"
   },
   donate = {
     title: "Siembra Futuro",
-    description: "Tu apoyo expande el legado a la siguiente milla.",
-  },
+    description: "Tu apoyo expande el legado a la siguiente milla."
+  }
 }) => {
   return (
     <section className="py-24 bg-surface px-8">
@@ -172,7 +172,7 @@ const BentoGrid: React.FC<BentoGridProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default BentoGrid;
+export default BentoGrid

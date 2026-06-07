@@ -1,20 +1,22 @@
-import BentoGrid from "../components/ourLegacy/BentoGrid"
-import CTASection from "../components/ourLegacy/CTASection"
-import HeroLegado from "../components/ourLegacy/Hero"
-import NuestraHistoria from "../components/ourLegacy/OurHistory"
-import ThenAndNow from "../components/ourLegacy/ThenAndNow"
-import Timeline from "../components/ourLegacy/Timeline"
-import MisionVision from "../components/ourLegacy/Vision"
+import BentoGrid from "../components/ourLegacy/components/sections/BentoGrid"
+import CTASection from "../components/ourLegacy/components/sections/CtaSection"
+import HeroLegado from "../components/ourLegacy/components/sections/Hero"
+import NuestraHistoria from "../components/ourLegacy/components/sections/OurHistory"
+import ThenAndNow from "../components/ourLegacy/components/sections/ThenAndNow"
+import Timeline from "../components/ourLegacy/components/sections/Timeline"
+import MisionVision from "../components/ourLegacy/components/sections/Vision"
 
-export function OurLegacy () {
- return (<>
- <HeroLegado />
- <NuestraHistoria />
- <MisionVision />
- <ThenAndNow />
- <Timeline />
- <BentoGrid />
- </>)
+export function OurLegacy() {
+  return (
+    <>
+      <HeroLegado />
+      <NuestraHistoria />
+      <MisionVision />
+      <ThenAndNow />
+      <Timeline />
+      <BentoGrid />
+    </>
+  )
 }
 
-export { OurLegacy as Component } 
+export { OurLegacy as Component }

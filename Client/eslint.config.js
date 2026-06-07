@@ -1,11 +1,11 @@
-import js from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
-import reactPlugin from "eslint-plugin-react";
-import reactHooks from "eslint-plugin-react-hooks";
-import reactRefresh from "eslint-plugin-react-refresh";
-import prettierPlugin from "eslint-plugin-prettier";
-import prettierConfig from "eslint-config-prettier";
+import js from "@eslint/js"
+import globals from "globals"
+import tseslint from "typescript-eslint"
+import reactPlugin from "eslint-plugin-react"
+import reactHooks from "eslint-plugin-react-hooks"
+import reactRefresh from "eslint-plugin-react-refresh"
+import prettierPlugin from "eslint-plugin-prettier"
+import prettierConfig from "eslint-config-prettier"
 
 export default tseslint.config(
   // 1. Ignorar carpetas innecesarias
@@ -20,17 +20,17 @@ export default tseslint.config(
       sourceType: "module",
       globals: {
         ...globals.browser,
-        ...globals.node, // Útil para lógica de servidor o scripts
+        ...globals.node // Útil para lógica de servidor o scripts
       },
       parserOptions: {
-        ecmaFeatures: { jsx: true }, // Permite JSX incluso si el archivo es .ts (aunque lo ideal es .tsx)
-      },
+        ecmaFeatures: { jsx: true } // Permite JSX incluso si el archivo es .ts (aunque lo ideal es .tsx)
+      }
     },
     plugins: {
       react: reactPlugin,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
-      prettier: prettierPlugin,
+      prettier: prettierPlugin
     },
     rules: {
       // Reglas de React Hooks
@@ -39,7 +39,7 @@ export default tseslint.config(
       // Reglas de React Refresh (para Vite)
       "react-refresh/only-export-components": [
         "warn",
-        { allowConstantExport: true },
+        { allowConstantExport: true }
       ],
 
       // Reglas de Prettier (formateo)
@@ -48,15 +48,15 @@ export default tseslint.config(
       // Reglas de TS personalizadas
       "@typescript-eslint/no-unused-vars": [
         "warn",
-        { argsIgnorePattern: "^_" },
+        { argsIgnorePattern: "^_" }
       ],
-      "react/react-in-jsx-scope": "off", // No necesario en React 17+
+      "react/react-in-jsx-scope": "off" // No necesario en React 17+
     },
     settings: {
-      react: { version: "detect" },
-    },
+      react: { version: "detect" }
+    }
   },
 
   // 3. Importante: Prettier siempre al final para sobrescribir reglas de estilo
-  prettierConfig,
-);
+  prettierConfig
+)

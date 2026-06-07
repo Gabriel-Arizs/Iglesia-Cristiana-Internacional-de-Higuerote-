@@ -1,7 +1,7 @@
-import { Leadership } from "../../pages/Leadership";
+import { Leadership } from "../../../../pages/Leadership"
 
 interface YouthNetworkCardProps {
-  className?: string;
+  className?: string
 }
 
 // 1. Tarjeta de Jóvenes (Ya estaba correcta, se mantiene como base)
@@ -27,7 +27,7 @@ function YouthNetworkCard({ className = "" }: YouthNetworkCardProps) {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
 // 2. Tarjeta de Matrimonios (Actualizada con imagen de fondo)
@@ -50,19 +50,19 @@ function MarriageNetworkCard() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 const menLeaders = [
   {
     src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDT6fbRNK_orjcb0yNvJ5c3Uk0B39zacVj7ZAMmtu-5yfkX2pTfIK0BwQbsKoMI9g7CvQAOfjlwg3ww7cakiq41NodpUkfxMdEugWpygUV7GnY7l9vqA3RvCmfCaKWPnkb9pQaIZf-45JtE70WntfkBIZC-ZMuL4QPW8AYr6rB9tNVYBSMiauOf-hktDcafCh1dLM-AzJWQzIytyxf7zrEZA5ZLuwfiKzRs9yHqB2Fzqg3JaQZp2aYrBtsEZlUneP0INaWR5gm03pQ",
-    alt: "Leader 1",
+    alt: "Leader 1"
   },
   {
     src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYySxf1DwhLbvzlGpDecgGNAiZSlDe8vxRKYCKSVI7scq3Ax-EViOYLhz_NElF6dzX8tTtUkLPEyQhPRl6TV0OwEdVLzN27JFzsyfeJfH_9X83lIZKTbknfSRcTchFExXHuDFJaNlxgCVmEtJQ4rFkiAEUj1NXeDqpO2WwqEjnvtuGZtpSOpp_aWwtU7l87CXzzoGekl915vLxidRpIPIVScuP0asa1K4r8BNQWQUztlqGsVp-RWg-6wQPeNBjMPq1Mvx7hsyvVXg",
-    alt: "Leader 2",
-  },
-];
+    alt: "Leader 2"
+  }
+]
 
 // 3. Tarjeta de Hombres (Actualizada con imagen de fondo)
 function MenNetworkCard() {
@@ -97,7 +97,7 @@ function MenNetworkCard() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 // 4. Tarjeta de Mujeres (Rediseñada para coincidir con la de Jóvenes)
@@ -119,7 +119,7 @@ function WomenNetworkCard() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
 export function LeadershipTeam() {
@@ -145,7 +145,7 @@ export function LeadershipTeam() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Leadership;
+export default Leadership

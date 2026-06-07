@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import type { TimelineItemProps } from "./MinisterialTeam.types";
-import { teamMembers } from "../../mocks/ministerialTeam";
+import { useEffect, useRef, useState } from "react"
+import type { TimelineItemProps } from "../../types/MinisterialTeam.types"
+import { teamMembers } from "../../data/ministerialTeam"
 
 function TimelineItem({ member, isVisible, isLast }: TimelineItemProps) {
-  const isLeft = member.side === "left";
+  const isLeft = member.side === "left"
 
   const cardClasses = `
     bg-background p-8 rounded-xl shadow-blue-900/5 shadow-xl border-l-4
@@ -11,14 +11,14 @@ function TimelineItem({ member, isVisible, isLast }: TimelineItemProps) {
     border-primary
     transition-all duration-700 ease-out
     ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
-  `;
+  `
 
   const imageWrapperClasses = `
     w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden shadow-lg border-4 border-white
     ${isLeft ? "mx-auto md:mx-0" : "mx-auto md:ml-auto md:mr-0"}
     transition-all duration-700 ease-out delay-150
     ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}
-  `;
+  `
 
   return (
     <div
@@ -82,41 +82,41 @@ function TimelineItem({ member, isVisible, isLast }: TimelineItemProps) {
         </>
       )}
     </div>
-  );
+  )
 }
 
 export default function MinisterialTeam() {
   const [visibleItems, setVisibleItems] = useState<boolean[]>(
-    new Array(teamMembers.length).fill(false),
-  );
-  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+    new Array(teamMembers.length).fill(false)
+  )
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
     const observers = itemRefs.current.map((ref, index) => {
-      if (!ref) return null;
+      if (!ref) return null
 
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
             setVisibleItems((prev) => {
-              const next = [...prev];
-              next[index] = true;
-              return next;
-            });
-            observer.disconnect();
+              const next = [...prev]
+              next[index] = true
+              return next
+            })
+            observer.disconnect()
           }
         },
-        { threshold: 0.2 },
-      );
+        { threshold: 0.2 }
+      )
 
-      observer.observe(ref);
-      return observer;
-    });
+      observer.observe(ref)
+      return observer
+    })
 
     return () => {
-      observers.forEach((obs) => obs?.disconnect());
-    };
-  }, []);
+      observers.forEach((obs) => obs?.disconnect())
+    }
+  }, [])
 
   return (
     <section className="py-24 max-w-7xl mx-auto px-8">
@@ -136,7 +136,7 @@ export default function MinisterialTeam() {
           <div
             key={member.name}
             ref={(el) => {
-              itemRefs.current[index] = el;
+              itemRefs.current[index] = el
             }}
           >
             <TimelineItem
@@ -148,5 +148,5 @@ export default function MinisterialTeam() {
         ))}
       </div>
     </section>
-  );
+  )
 }

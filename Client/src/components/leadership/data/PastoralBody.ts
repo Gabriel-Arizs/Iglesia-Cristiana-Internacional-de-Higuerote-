@@ -1,4 +1,4 @@
-import type { Pastor } from "../components/leadership/PastoralBody.types";
+import type { Pastor } from "../types/PastoralBody.types"
 
 export const defaultPastores: Pastor[] = [
   {
@@ -11,7 +11,7 @@ export const defaultPastores: Pastor[] = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAu9p7xuMByGhzq3CgMRIwY7dxTyA7f6V_7J-RwZAsVaKq5RPCcZm8d7qF94Ab2hnqdEYZDfh6ouF5s_IUY-0dmeXBb7bo07S9CA43FrdD33Cv7Xpj0_5QcXtqQywy4BLJ2ZVYJC8cbxAAV-X1Rtq8EjuuqbzL-aiWWPW1DmQDpWpxWIOEi8WbTzOmnXROOZn3SpKkiKqqpa-3hwMLz3zkfweGPBJo3BwhcxiJxfXZeKkTWg1GZSc-CoiJAC5NjOcr-o37xQwPambU",
     imageAlt: "Pastores Alejandro y Elena Santos",
     onVerMensaje: () => {},
-    onContactanos: () => {},
+    onContactanos: () => {}
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const defaultPastores: Pastor[] = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAu9p7xuMByGhzq3CgMRIwY7dxTyA7f6V_7J-RwZAsVaKq5RPCcZm8d7qF94Ab2hnqdEYZDfh6ouF5s_IUY-0dmeXBb7bo07S9CA43FrdD33Cv7Xpj0_5QcXtqQywy4BLJ2ZVYJC8cbxAAV-X1Rtq8EjuuqbzL-aiWWPW1DmQDpWpxWIOEi8WbTzOmnXROOZn3SpKkiKqqpa-3hwMLz3zkfweGPBJo3BwhcxiJxfXZeKkTWg1GZSc-CoiJAC5NjOcr-o37xQwPambU",
     imageAlt: "Pastor Carlos Mendoza",
     onVerMensaje: () => {},
-    onContactanos: () => {},
+    onContactanos: () => {}
   },
   {
     id: 3,
@@ -35,6 +35,6 @@ export const defaultPastores: Pastor[] = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAu9p7xuMByGhzq3CgMRIwY7dxTyA7f6V_7J-RwZAsVaKq5RPCcZm8d7qF94Ab2hnqdEYZDfh6ouF5s_IUY-0dmeXBb7bo07S9CA43FrdD33Cv7Xpj0_5QcXtqQywy4BLJ2ZVYJC8cbxAAV-X1Rtq8EjuuqbzL-aiWWPW1DmQDpWpxWIOEi8WbTzOmnXROOZn3SpKkiKqqpa-3hwMLz3zkfweGPBJo3BwhcxiJxfXZeKkTWg1GZSc-CoiJAC5NjOcr-o37xQwPambU",
     imageAlt: "Pastora María Rodríguez",
     onVerMensaje: () => {},
-    onContactanos: () => {},
-  },
-];
+    onContactanos: () => {}
+  }
+]

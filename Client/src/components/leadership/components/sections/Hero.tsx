@@ -1,30 +1,30 @@
-import { HandHeart } from "lucide-react";
-import type { GalleryImage } from "../../types";
-import type { HeroProps } from "./Hero.types";
+import { HandHeart } from "lucide-react"
+import type { GalleryImage } from "../../../../types"
+import type { HeroProps } from "../../types/Hero.types"
 
 const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: "./photo1.jpeg",
     alt: "Líder de adoración cantando",
     aspect: "aspect-[3/4]",
-    wrapperClass: "pt-8",
+    wrapperClass: "pt-8"
   },
   {
     src: "./photo2.jpeg",
     alt: "Maestra cariñosa con niños",
-    aspect: "aspect-square",
+    aspect: "aspect-square"
   },
   {
     src: "./photo3.jpeg",
     alt: "Líderes comunitarios conversando",
-    aspect: "aspect-square",
+    aspect: "aspect-square"
   },
   {
     src: "./photo4.jpeg",
     alt: "Líder juvenil con adolescentes",
-    aspect: "aspect-[3/4]",
-  },
-];
+    aspect: "aspect-[3/4]"
+  }
+]
 
 // Componente interno — no se exporta, es privado al módulo
 function ImageColumn({ images }: { images: GalleryImage[] }) {
@@ -45,12 +45,12 @@ function ImageColumn({ images }: { images: GalleryImage[] }) {
         </div>
       ))}
     </div>
-  );
+  )
 }
 
 export function Hero({ images = GALLERY_IMAGES }: HeroProps) {
-  const leftImages = images.slice(0, 2);
-  const rightImages = images.slice(2, 4);
+  const leftImages = images.slice(0, 2)
+  const rightImages = images.slice(2, 4)
 
   return (
     <section className=" relative w-full px-6 md:px-12 py-16 lg:py-24 overflow-hidden bg-white">
@@ -93,5 +93,5 @@ export function Hero({ images = GALLERY_IMAGES }: HeroProps) {
         </div>
       </div>
     </section>
-  );
+  )
 }

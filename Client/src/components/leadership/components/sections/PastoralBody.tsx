@@ -1,9 +1,9 @@
-import { defaultPastores } from "../../mocks/PastoralBody";
-import type { PastoralBodyProps } from "./PastoralBody.types";
+import { defaultPastores } from "../../data/PastoralBody"
+import type { PastoralBodyProps } from "../../types/PastoralBody.types"
 
 export default function PastoralBody({
   sectionTitle = "Cuerpo Pastoral",
-  pastores = defaultPastores,
+  pastores = defaultPastores
 }: PastoralBodyProps) {
   return (
     <section className="bg-background py-24">
@@ -15,7 +15,7 @@ export default function PastoralBody({
 
         <div className="flex flex-col gap-32">
           {pastores.map((pastor, index) => {
-            const isEven = index % 2 === 0;
+            const isEven = index % 2 === 0
 
             const ImageBlock = (
               <div className="relative">
@@ -32,7 +32,7 @@ export default function PastoralBody({
                   }`}
                 />
               </div>
-            );
+            )
 
             const ContentBlock = (
               <div className="flex flex-col justify-center">
@@ -46,7 +46,7 @@ export default function PastoralBody({
                   {pastor.description}
                 </p>
               </div>
-            );
+            )
 
             return (
               <div
@@ -65,10 +65,10 @@ export default function PastoralBody({
                   </>
                 )}
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </section>
-  );
+  )
 }

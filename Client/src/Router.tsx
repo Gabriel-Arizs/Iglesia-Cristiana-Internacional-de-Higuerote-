@@ -1,5 +1,5 @@
-import { createHashRouter } from "react-router";
-import App from "./App";
+import { createHashRouter } from "react-router"
+import App from "./App"
 
 export const router = createHashRouter([
   {
@@ -10,6 +10,7 @@ export const router = createHashRouter([
       { path: "ministries", lazy: () => import("./pages/Ministries") },
       { path: "leadership", lazy: () => import("./pages/Leadership") },
       { path: "our-legacy", lazy: () => import("./pages/OurLegacy") },
-    ],
-  },
-]);
+      { path: "sede", lazy: () => import("./pages/OurVenue") }
+    ]
+  }
+])
